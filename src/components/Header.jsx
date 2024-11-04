@@ -1,21 +1,28 @@
-import { Link } from 'react-router-dom';
-import "../App.css"
+import { Link } from "react-router-dom";
+import "../App.css";
+import badminton_icon from "../assets/images/badminton_icon.png";
 
 const Header = () => {
     return (
         <header className="header">
-            <div>
-                <img src="" alt="Badminton Web Logo" />
+            <div className="icon_container">
+                <img src={badminton_icon} alt="Badminton Web Logo" />
                 <h1>Badminton Web</h1>
             </div>
-            <div className="navBar">
-                <nav>
-                    <ul>
-                        <li><Link to="/">Home</Link></li>
-                        <li><Link to="/about">About</Link></li>
-                        <li><Link to="/reservation">reservation</Link></li>
-                        <li><Link to="/contact">Contact</Link></li>
-                    </ul>
+            <div className="navBar_container">
+                <nav id="navBar">
+                    <a>
+                        <Link to="/">Home</Link>
+                    </a>
+                    <a>
+                        <Link to="/about">About</Link>
+                    </a>
+                    <a>
+                        <Link to="/reservation">reservation</Link>
+                    </a>
+                    <a>
+                        <Link to="/contact">Contact</Link>
+                    </a>
                 </nav>
             </div>
         </header>
