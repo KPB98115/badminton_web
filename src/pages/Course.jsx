@@ -15,7 +15,6 @@ const Course = () => {
         <li>{t("course remark 7")}</li>
         <li>{t("course remark 8")}</li>
         <li>{t("course remark 9")}</li>
-        <li>{t("course remark 10")}</li>
       </ol>
     </div>
   );
