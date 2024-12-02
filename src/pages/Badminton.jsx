@@ -1,9 +1,9 @@
 import { useTranslation } from "react-i18next";
-import image1 from "../assets/images/image1.jpg";
-import image2 from "../assets/images/image2.jpg";
-import image3 from "../assets/images/image3.png";
+import image1 from "../assets/images/badminton1.png";
+import image2 from "../assets/images/badminton2.png";
+import image3 from "../assets/images/badminton3.png";
 import image4 from "../assets/images/image1.jpg";
-import title_image from "../assets/images/badminton.jpg";
+import title_image from "../assets/images/badminton_info.png";
 
 const Badminton = () => {
   const { t } = useTranslation();
