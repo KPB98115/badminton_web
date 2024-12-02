@@ -205,7 +205,7 @@ html, body {
   margin-top: 100px;
 }
 .instructor_container img {
-  width: 70%;
+  width: 50%;
   height: auto;
 }
 .instructor_description {
@@ -283,6 +283,7 @@ html, body {
 .badminton_title_image {
   height: 50vh;
   width: 100%;
+  opacity: 0.5;
 }
 .badminton_content {
   display: grid;
@@ -438,7 +439,7 @@ html, body {
   flex-direction: row;
   align-items: center;
   height: 25px;
-  background-color: #ffbf5e89;
+  background-color: #ffb3b389;
   border-radius: 5px;
   padding: 5px;
   cursor: pointer;
@@ -451,23 +452,30 @@ html, body {
   text-align: center;
 }
 #lang_option_zh_active {
-  background-color: orange;
+  background-color: #BA5E74;
   border-radius: 5px;
 }
 #lang_option_en_active {
-  background-color: orange;
+  background-color: #BA5E74;
   border-radius: 5px;
 }
 
 /* Contacts */
 .contact_container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: start;
   min-height: 100vh;
   max-height: fit-content;
   padding: 30px;
+  margin-top: 80px;
+}
+.contact_child_container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 50px;
 }
 .contact_wrapper {
   display: flex;
@@ -527,6 +535,66 @@ html, body {
 .footer li img {
   width: 30%;
 }
+
+/* Modal */
+.modal_wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensure it appears above other elements */
+}
+.modal_container {
+  background: white;
+  color: rgb(100, 100, 100);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+.modal_title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.modal_content {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+}
+.modal_button_container {
+  display: flex;
+  justify-content: space-around;
+}
+.modal_button {
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  background-color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#modal_cookies_accept_btn {
+  border: 2px solid green;
+  color: green;
+}
+#modal_cookies_denied_btn {
+  border: 2px solid red;
+  color: red;
+}
+#modal_cookies_accept_btn:hover {
+  background-color: green;
+  color: white;
+}
+#modal_cookies_denied_btn:hover {
+  background-color: red;
+  color: white;
+}
+
 
 /* Privacy Policy */
 .privacy_container {

@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useState, useEffect } from "react";
 import Header from "./components/header";
 import Footer from "./components/Footer";
 import MainPage from "./pages/MainPage";
@@ -12,25 +13,40 @@ import "./App.css";
 import ClassInfo from "./pages/ClassInfo";
 import Benefit from "./pages/Benefit";
 import Privacy_term from "./pages/Private_terms";
+import Cookies from "./components/cookies";
 
 function App() {
+  const [isFirstVisit, setIsFirstVisit] = useState(false);
+
+  useEffect(() => {
+    const reference = sessionStorage.getItem("acceptd_cookies_token");
+    if (reference === null) {
+      setIsFirstVisit(true);
+    }
+  }, []);
+
   return (
-    <Router>
-      <Header />
-      <ReservationBlock />
-      <Routes>
-        <Route path="/badminton_web" element={<MainPage />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/badminton_info" element={<Badminton />} />
-        <Route path="/benefit" element={<Benefit />} />
-        <Route path="/instructor" element={<Instructor />} />
-        <Route path="/classinfo" element={<ClassInfo />} />
-        <Route path="/course" element={<Course />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/privacy_terms" element={<Privacy_term />} />
-      </Routes>
-      <Footer />
-    </Router>
+    <div>
+      {isFirstVisit && (
+        <Cookies enableCookiesPopup={() => setIsFirstVisit(false)} />
+      )}
+      <Router>
+        <Header />
+        <ReservationBlock />
+        <Routes>
+          <Route path="/badminton_web" element={<MainPage />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/badminton_info" element={<Badminton />} />
+          <Route path="/benefit" element={<Benefit />} />
+          <Route path="/instructor" element={<Instructor />} />
+          <Route path="/classinfo" element={<ClassInfo />} />
+          <Route path="/course" element={<Course />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy_terms" element={<Privacy_term />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </div>
   );
 }
 
