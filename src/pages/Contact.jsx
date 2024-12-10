@@ -1,12 +1,39 @@
-import "../App.css"
+import "../App.css";
+import phone_call from "../assets/images/phone-call_circle.png";
+import email from "../assets/images/mail-icon.png";
+import whatsapp from "../assets/images/whatsapp-icon.svg";
 
 const Contact = () => {
-    return (
-        <div>
-            <h1>Welcome to the Contact</h1>
-            <p>This is the main content of the page.</p>
+  return (
+    <div>
+      <div className="contact_container">
+        <h1>期待與您聯繫</h1>
+        <div className="contact_child_container">
+          <div className="contact_wrapper">
+            <div>
+              <h3>WhatsApp</h3>
+              <img src={whatsapp} alt="" />
+            </div>
+            <p>+852 8416 7470</p>
+          </div>
+          <div className="contact_wrapper">
+            <div>
+              <h3>Email</h3>
+              <img src={email} alt="" />
+            </div>
+            <p>bcnsportcompany@gmail.com</p>
+          </div>
+          <div className="contact_wrapper">
+            <div>
+              <h3>Tel.</h3>
+              <img src={phone_call} alt="" />
+            </div>
+            <p>+852 8416 7470</p>
+          </div>
         </div>
-    )
-}
+      </div>
+    </div>
+  );
+};
 
-export default Contact
+export default Contact;
