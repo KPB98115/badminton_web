@@ -10,7 +10,7 @@ const Footer = () => {
           <ul>
             <li>
               <a>
-                <Link to="/privacy_terms">privacy & terms</Link>
+                <Link to="/privacy_terms">Privacy & terms</Link>
               </a>
             </li>
             <li>
