@@ -74,10 +74,16 @@ html, body {
   display: flex;
 }
 
+.carousel_img_container {
+  width: 100%;
+  height: 100%;
+}
+
 .carousel_img {
   position: absolute;
   width: 100%;
   height: 100%;
+  object-fit: cover;
   top: 0;
   left: 100%;
   opacity: 0;
@@ -312,12 +318,10 @@ html, body {
 }
 .benefit_content_wrapper {
   display: flex;
+  flex-direction: column;
   align-items: start;
   justify-content: space-around;
   width: 100%;
-}
-.benefit_description {
-  width: 300px;
 }
 
 /* Class info */
@@ -596,4 +600,124 @@ html, body {
 }
 .privacy_ul li {
   margin-top: 10px;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 905px) {
+  .navBar_container {
+    position: relative;
+  }
+  #navBar {
+    position: absolute;
+    flex-direction: column;
+    top: 40px;
+    background-color: #ffb3b389;
+    border: none;
+    border-radius: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+  #navBar a:hover {
+    background-color: #BA5E74;
+    border-radius: 5px;
+  }
+  .nav_menu_btn {
+    width: 50px;
+    height: 35px;
+    background-color: #ffb3b389;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 10px;
+  }
+  .nav_menu_btn_img {
+    width: 20px;
+    height: auto;
+    object-fit: cover;
+  }
+  .icon_container {
+    width: 30%;
+  }
+  #badminton_header_list {
+    position: relative;
+    align-items: start;
+    margin-left: 0;
+    width: 80%;
+  }
+  #badminton_header_list a:hover {
+    background-color: #ffb3b389;
+  }
+  .carousel_container {
+    width: 100%;
+    height: 50vh;
+  }
+  .reservation_block {
+    bottom: 100px;
+  }
+  .reservation_image {
+    width: 50px;
+    height: 50px;
+  }
+  .footer {
+    position: fixed;
+  }
+  .footer-content nav ul {
+    margin-left: -30px;
+  }
+  .about_content {
+    width: 100vw;
+  }
+  .about_concept {
+    grid-template-columns: none;
+    width: 90vw;
+  }
+  .badminton_content {
+    grid-template-columns: none;
+  }
+  .benefit_content_wrapper {
+    flex-direction: column;
+  }
+  .instructor_container {
+    grid-template-columns: none;
+    margin: 0;
+    margin-top: 80px;
+    margin-bottom: 250px;
+  }
+  .instructor_container img {
+    width: 70%;
+  }
+  .instructor_title p {
+    font-size: 35px;
+  }
+  .dropdown_toggle img {
+    width: 10%;
+  }
+  .classInfo_container {
+    margin-bottom: 200px;
+  }
+  .classInfo_wrapper {
+    flex-direction: column;
+  }
+  .classInfo_image {
+    display: flex;
+    justify-content: center;
+  }
+  .classInfo_image img {
+    width: 70%;
+  }
+  .classInfo_description {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .course_container {
+    padding: 0;
+    margin-bottom: 100px;
+  }
+  .contact_child_container {
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 200px;
+  }
 }
