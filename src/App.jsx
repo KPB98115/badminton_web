@@ -36,7 +36,7 @@ function App() {
           <Header />
           <ReservationBlock />
           <Routes>
-            <Route path="/badminton_web" element={<MainPage />} />
+            <Route path="/" element={<MainPage />} />
             <Route path="/about" element={<About />} />
             <Route path="/badminton_info" element={<Badminton />} />
             <Route path="/benefit" element={<Benefit />} />
