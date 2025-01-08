@@ -255,6 +255,9 @@ html, body {
 .dropdown_toggle img {
   width: 5%;
 }
+.dropdown_toggle button h2 {
+  color: white;
+}
 .dropdown_list {
   margin-top: -5px;
 }
@@ -410,7 +413,7 @@ html, body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  overflow-x: auto; /* Add this line */
+  /*overflow-x: auto; */
 }
 #navBar {
   display: flex;
