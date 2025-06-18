@@ -20,8 +20,6 @@ const Benefit = () => {
             <h3>{t("benefit title 2")}</h3>
             <p>{t("benefit content 2")}</p>
           </div>
-        </div>
-        <div className="benefit_content_wrapper">
           <div className="benefit_description">
             <h3>{t("benefit title 3")}</h3>
             <p>{t("benefit content 3")}</p>

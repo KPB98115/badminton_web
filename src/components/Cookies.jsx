@@ -25,7 +25,7 @@ const Cookies = (prop) => {
   };
 
   const handleAcceptCookies = () => {
-    loadGoogleAnalytics();
+    //loadGoogleAnalytics();
     sessionStorage.setItem("acceptd_cookies_token", Date.now());
     setAcceptCookies(true);
     prop.enableCookiesPopup();

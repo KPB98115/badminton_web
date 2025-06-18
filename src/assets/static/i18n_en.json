@@ -7,7 +7,7 @@
   "course informations": "Course Information",
   "contact us": "Contact Us",
   "name": "CLEMENT CHUNG",
-  "head cocah": "Head Coach",
+  "head cocah": "Coach",
   "pick date": "Pick Date",
   "pick time": "Pick Time",
   "confirm info": "Confirm Class Information",
@@ -83,5 +83,6 @@
   "cookies title": "Privacy Preferences",
   "cookies content": "This website uses cookies to offer a better browsing experience and to collect usage informations about. By clicking on the \"Accept\" button you accept our Cookies Policy.",
   "cookies accept": "Accept",
-  "cookies denied": "Denied"
+  "cookies denied": "Denied",
+  "contact header": "Contact Us"
 }
